@@ -18,13 +18,13 @@ const Header = () => {
           <nav>
             <ul className="nav-list">
               <li className="nav-list-items">
-                <Link to="/" className="nav-list-items-links">
+                <Link to="/home" className="nav-list-items-links">
                   Home
                 </Link>
               </li>
 
               <li className="nav-list-items">
-                <Link to="/shop" className="nav-list-items-links">
+                <Link to="/" className="nav-list-items-links">
                   Shop
                 </Link>
               </li>
@@ -66,8 +66,8 @@ const Header = () => {
           </div>
         </header>
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route exact path="/" element={<Shop />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
 
